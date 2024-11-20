@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admissions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/unilogo.png" alt="">
+           <a href="../index.html" style="text-decoration: none;"><h1>Jinggangshan University</h1></a> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="admissions.html" class="active">Admissions</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admissions Hero -->
+    <header class="admissions-hero">
+        <div class="hero-content">
+            
+            <h1>卓越大学</h1>
+            <p>Begin your journey towards excellence</p>
+            
+        </div>
+    </header>
+
+    <!-- Admission Process -->
+    <section class="admission-process">
+        <h2>Admission Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Verify and Submit Documents</h3>
+                <p>Complete the online application form with all required documents.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>JW and Admission Letter</h3>
+                <p>Take the university entrance examination.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>VISA</h3>
+                <p>Attend a personal interview with faculty members.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3> BOOK TICKET and Welcome to Ji'an</h3>
+                <p>Receive admission decision within 2-3 weeks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="requirements">
+        <h2>Admission Requirements</h2>
+        <div class="requirements-container">
+            <div class="requirement-card">
+                <h3>Academic Requirements</h3>
+                <ul>
+                    <li>High School Diploma or equivalent</li>
+                    <li>Minimum GPA of 3.0</li>
+                    <li>SAT/ACT Scores</li>
+                    <li>Letters of Recommendation</li>
+                </ul>
+            </div>
+            <div class="requirement-card">
+                <h3>Required Documents</h3>
+                <ul>
+                    <li>Completed Application Form</li>
+                    <li>Official Transcripts</li>
+                    <li>Statement of Purpose</li>
+                    <li>Valid ID Proof</li>
+                </ul>
+            </div>
+            <div class="requirement-card">
+                <h3>International Students</h3>
+                <ul>
+                    <li>TOEFL/IELTS Scores</li>
+                    <li>Visa Documentation</li>
+                    <li>Financial Statement</li>
+                    <li>Passport Copy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="apply-now" class="application-section">
+        <h2 class="app-head">Contact Management For Admission Directly</h2>
+        <div class="application-container">
+            <form class="application-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Text">Country</label>
+                        <input type="text" id="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Whatsapp">Whatsapp</label>
+                        <input type="tel" id="whatsapp" required placeholder="With Country Code!!!">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="program">Desired Program</label>
+                    <select id="program" required>
+                        <option value="">Select a Program</option>
+                        <option value="cs">Internal Medicine (MBBS)</option>
+                        <option value="business">Chinese Language Test (HSK & HSKK)</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="arts">Liberal Arts</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Personal Statement</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Admissions</h3>
+                <p>Email: admissions@university.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 University Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

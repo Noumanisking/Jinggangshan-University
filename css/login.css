@@ -1,0 +1,259 @@
+/* Login/Register Page Styles */
+
+/* Main Container */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/campus-image.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -60px; /* Adjust based on your navbar height */
+}
+
+.auth-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Toggle Tabs */
+.toggle-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+.tab {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    margin-bottom: -2px;
+}
+
+/* Form Styles */
+.form-container {
+    transition: all 0.3s ease;
+}
+
+.form-container.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+/* Google Sign-in Button */
+.social-login {
+    margin-bottom: 2rem;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    background-color: white;
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.forgot-password {
+    color: #003366;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #004d99;
+}
+
+/* Terms Checkbox */
+.form-terms {
+    margin-bottom: 1.5rem;
+}
+
+.form-terms label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-box {
+        padding: 1.5rem;
+    }
+
+    .tab {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .form-options {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
+
+/* Error States */
+.error {
+    border-color: #ff4444 !important;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+/* Success States */
+.success {
+    border-color: #00C851 !important;
+}
+
+/* Loading State */
+.submit-btn.loading {
+    background-color: #666;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.submit-btn.loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
