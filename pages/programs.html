@@ -7,22 +7,37 @@
     <link rel="stylesheet" href="../css/programs.css">
 </head>
 <body>
-    <nav class="navbar"></nav>
-        <div class="logo">
-            <img src="../images/unilogo.png" alt="">
-            <a href="../index.html" style="text-decoration: none;"><h1>Jinggangshan University</h1></a> 
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="admissions.html" class="active">Admissions</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="campus-life.html">Campus Life</a></li>
-        </ul>
-    </nav>
-    <header>
-        <!-- Top Navigation Bar is excluded as per your instructions -->
-    </header>
-
+     <!-- Navigation -->
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="../index.html" style="text-decoration: none;"><img src="../images/unilogo.png" alt="University Logo" class="logo-img">
+            <h1>Jinggangshan University</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="menu-icon"></span>
+    </button>
+    <ul class="nav-links">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../pages/admissions.html">Admissions</a></li>
+        <li><a href="../pages/programs.html">Programs</a></li>
+        <li><a href="../pages/programs.html">Campus Life</a></li>
+    </ul>
+</nav>
+<script>const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        menuIcon.classList.toggle('toggle');
+    });
+    </script>
+ <!-- Admissions Hero -->
+ <header class="admissions-hero">
+    
+        
+      
+</header>
     <!-- Main Page Content -->
     <main>
         <!-- Hero Section -->
@@ -41,6 +56,7 @@
                     <li>Duration: 5 years</li>
                     <li>Eligibility: Pre-medical qualification (FSc or equivalent)</li>
                     <li>Features: Clinical rotations, advanced research opportunities</li>
+                    <li>Degree Awarded: Clinical Medicine (equivalent to MBBS)</li>
                 </ul>
                 <button>Learn More</button>
             </div>
@@ -52,6 +68,7 @@
                     <li>Duration: 6 months - 1 year</li>
                     <li>Eligibility: No prior experience required</li>
                     <li>Levels: Beginner, Intermediate, Advanced</li>
+                    <li>Degree Awarded: HSK 4 & HSK5</li>
                 </ul>
                 <button>Learn More</button>
             </div>
@@ -62,32 +79,34 @@
             <h2>Program Schedules</h2>
             <div class="schedule-item">
                 <h3>Internal Medicine</h3>
-                <p>Classes begin: January 2024</p>
+                <p>Classes begin: March 2025</p>
                 <p>Application Deadline: December 15, 2023</p>
             </div>
             <div class="schedule-item">
+                <h3>Internal Medicine</h3>
+                <p>Classes begin: September 2025</p>
+                <p>Application Deadline: December 15, 2025</p>
+            </div>
+            <div class="schedule-item">
                 <h3>Chinese Language Proficiency (HSK/HSKK)</h3>
-                <p>Classes begin: February 2024</p>
-                <p>Application Deadline: January 10, 2024</p>
+                <p>Classes begin: March 2024</p>
+                <p>Application Deadline: January 10, 2025</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Chinese Language Proficiency (HSK/HSKK)</h3>
+                <p>Classes begin: September 2024</p>
+                <p>Application Deadline: January 10, 2025</p>
             </div>
         </section>
 
         <!-- Application Process Section -->
-        <section class="application-process">
-            <h2>How to Apply</h2>
-            <ol>
-                <li>Fill out the online application form on our website.</li>
-                <li>Submit the required documents (transcripts, ID, etc.).</li>
-                <li>Pay the application fee.</li>
-                <li>Attend an online interview.</li>
-                <li>Receive your admission offer.</li>
-            </ol>
-            <button>Apply Now</button>
-        </section>
+      
 
         <!-- Testimonials Section -->
         <section class="testimonials">
+        
             <h2>What Our Students Say</h2>
+        <div class="testimonials-head">
             <div class="testimonial">
                 <p>"The Internal Medicine program transformed my career. The clinical training was exceptional!"</p>
                 <h4>- Dr. Ahmed Khan</h4>
@@ -96,6 +115,7 @@
                 <p>"Learning Chinese through the HSK program was an amazing experience. The teachers were incredibly supportive."</p>
                 <h4>- Maryam Li</h4>
             </div>
+        </div>
         </section>
 
         <!-- FAQs Section -->

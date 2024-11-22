@@ -8,19 +8,30 @@
 </head>
 <body>
       <!-- Navigation -->
-      <nav class="navbar">
-        
-        <div class="logo">
-            <img src="../images/unilogo.png" alt="">
-            <a href="../index.html" style="text-decoration: none;"><h1>Jinggangshan University</h1></a> 
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html" class="active">Home</a></li>
-            <li><a href="../pages/admissions.html">Admissions</a></li>
-            <li><a href="../pages/#">Programs</a></li>
-            <li><a href="../pages/campus-life.html">Campus Life</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="../index.html" style="text-decoration: none;"><img src="../images/unilogo.png" alt="University Logo" class="logo-img">
+            <h1>Jinggangshan University</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="menu-icon"></span>
+    </button>
+    <ul class="nav-links">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../pages/admissions.html">Admissions</a></li>
+        <li><a href="../pages/programs.html">Programs</a></li>
+        <li><a href="../pages/programs.html">Campus Life</a></li>
+    </ul>
+</nav>
+<script>const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        menuIcon.classList.toggle('toggle');
+    });
+    </script>
     <!-- header is here -->
     <header class="main-body">
         <div class="main-body-cont">
@@ -142,7 +153,7 @@
     </div>
 
 
-<script src="../js/main.js"></script>
+
     </footer>
 </body>
 </html>
